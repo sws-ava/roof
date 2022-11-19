@@ -1,0 +1,112 @@
+.langSwiper span+span {
+    margin-left: 15px;
+}
+
+.langSwiper span {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu__link {
+    cursor: pointer;
+}
+
+.contact-section__form-input {
+    font-size: 20px;
+    font-family: "Play", sans-serif;
+}
+
+.works-block__item,
+.works-block__item:focus-visible {
+    outline: none;
+}
+
+.price-blocks__item-price {
+    padding-left: 10%;
+}
+
+.modalHolder {
+    position: absolute;
+    left: -5000px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.modalHolder.showModal {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    color: #2F4E54;
+}
+
+.modalHolder .modalInner {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.modalHolder .modalInner .closeModal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    fill: #2F4E54;
+}
+
+.modalHolder .modalInner .closeModal:hover {
+    scale: 1.2;
+    fill: #000;
+}
+
+.modalHolder .priceItem__inner {
+    background-color: #333;
+}
+
+.modalHolder .priceItem__inner .closeModal {
+    fill: #fff;
+}
+
+.modalHolder .priceItem__inner .closeModal:hover {
+    fill: #fff;
+}
+
+.price-blocks__item-action {
+    cursor: pointer;
+}
+/* 
+.someDiv{
+    margin-top: 200px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    background-image: url('/images/sended.png');
+    background-size: 100% 100%;
+} */
