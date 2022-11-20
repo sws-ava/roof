@@ -50,7 +50,7 @@ function PriceItem({item, action, lang}) {
                 setVisible={setVisible}
             >
                 <div className="contact-section__form">
-                    <input
+                    {/* <input
                         required
                         value={clientPhone}
                         onChange={(e) => inputHandler(e.target.value)}
@@ -68,7 +68,7 @@ function PriceItem({item, action, lang}) {
                         onClick={() => sentMessage()}
                     >
                         {lang.lang.contact.contact3}
-                    </span>
+                    </span> */}
 
                     <div className="contact-section__title">
                         {lang.lang.contact.contact4}
